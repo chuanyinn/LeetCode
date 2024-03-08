@@ -1,1 +1,2 @@
-​
+1. Variation of kadane code - maximum continuous subarray subarray.​ But now, keep track of both if all elements are included, or if one is skipped. Also store a global maximum that is the max of these three - max_global, max_exclusive, max_inclusive.
+2. To ensure it's skipped correctly, divide into cases. First process exclusive, either add current value to max_exclusive, or skip this one so stored max_inclusive. Then process inclusive, either add current value to max_inclusive, or start over.
