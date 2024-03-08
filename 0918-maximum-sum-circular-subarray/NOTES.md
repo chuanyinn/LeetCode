@@ -1,1 +1,2 @@
-​
+1. Kadane algorithm is for finding the maximum subarray without wrapping. Dynamic programming technique, where at each element, can decide either to add it to the current sum, or start over and have that as the first element. Collect max_current_sum, and max_global_sum.
+2. ​To adapt the kadane algorithm to this case where wrapping might happen, use the trick that finding the maximum subarray [e, a, b] out of [a, b, c, d, e] with wrapping is the same as identifying that [c, d] is the minimum subarray. Getting the minimum subarray is same as calling for negative kadane. Then add the total sum to the result.
