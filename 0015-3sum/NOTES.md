@@ -1,1 +1,3 @@
-​
+1. Calling twoSum, on an element being the target and the rest of the array being nums, would exceed time limit.
+2. Algorithm: double pointers. First sort the elements so the positional order of the indices make sense. Then looping over all the elements once on the index i, and two pointers afterwards being left and right. So the sum is over nums[i], nums[left], nums[right]. Depending on the current_sum being 0 (good case), negative (move left cursor right), positive (move right cursor left), adjust and append.
+3. Skip duplicate elements. ​This is true for i (in for loop), for left (in while loop) and for right (in while loop).
