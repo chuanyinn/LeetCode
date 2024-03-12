@@ -1,1 +1,2 @@
-​
+1. DP problem. One approach is to store maximum amount robbed stored at each house in one list, and during the iterative step decide either to skip (resulting in `dp[i-1]`) or to take (resulting in `dp[i-2] + nums[i]`. And accumulate to the final maximum.
+2. ​Another approach is to store in two lists, but then need to be careful as sometimes it's necessary to skip two...
