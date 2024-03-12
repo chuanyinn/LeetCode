@@ -1,1 +1,4 @@
-​
+1. Topological sorting approach. The idea is to represent the courses and their prerequisites as a directed graph (`defaultdict(lilst)`), and then check if there is a valid ordering of courses such that you can finish all of them.
+2. In graph theory, the in-degree of a vertex (or node) in a directed graph is the number of incoming edges to that vertex.
+3. Topological sorting is an ordering of the vertices (nodes) in a directed acyclic graph (DAG) such that for every directed edge (u, v), vertex u comes before vertex v in the ordering. In other words, it's a linear ordering of the vertices that respects the partial order defined by the directed edges.
+4. In this example, cyclic prerequisitive will cause in_degree to be non-zero. And by performing topological sorting acyclic graph will all be properly zeroed.
