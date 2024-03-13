@@ -1,1 +1,2 @@
-​
+1. Two-pointer technique. Sort the array first. Pick `i`, `left = i + 1`, `right = last`. If sum is small enough, all of the ones including `i`, `left`, and stuff between `right` and `left` are also small enough, so increment without needing to run the sum, and move `left` to right to tighten the margin. If not small enough, move `right` to the left to make room.
+2. Sorting does not change the final count.
