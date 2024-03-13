@@ -1,1 +1,1 @@
-​
+1. Sliding window approach. It starts with an empty window and moves the `right` pointer to expand the window until the sum is greater than or equal to the target. Then, it moves the `left` pointer to shrink the window while maintaining the sum greater than or equal to the target. The minimum length of the subarray is updated during this process.​
