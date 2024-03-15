@@ -1,1 +1,2 @@
-​
+1. Prefix sum algorithm. ​This function iterates through each update operation, incrementing the value at the starting index and decrementing the value at the index after the ending index. After applying all updates, it performs a prefix sum operation to obtain the final array. It basically first builds an accumulator that has all hte information about the starts and stops, then sum it up in the end.
+2. My first approach was to create a defaultdict and only needing to assign values once throughout the list of `updates`. But even this is too slow, because prefix sum would be O(1) for each assignment.
