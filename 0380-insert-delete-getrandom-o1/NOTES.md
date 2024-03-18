@@ -1,1 +1,2 @@
-​
+1. Use Python's built-in data structures like dictionaries and lists to achieve average O(1) time complexity for insert, remove, and getRandom operations.
+2. ​This implementation maintains a dictionary `val_to_index`, where keys are the values inserted into the set, and values are their corresponding indices in the `values` list. This allows O(1) lookup for presence and removal of values. The values list stores the actual values, enabling O(1) getRandom operation by randomly choosing an index from the list. Insertion and removal are also O(1) on average because appending to the list is amortized O(1), and removing from the end of the list is also O(1).
