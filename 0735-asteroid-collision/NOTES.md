@@ -1,1 +1,2 @@
-​
+1. Stack is a more natural choice than using two deques. This way can use a simple for loop over asteroids, and while loop over stack...
+2. Divide in cases, if next asteroid moves positive, never a problem. If next asteroid moves negative, depends on sizes.
