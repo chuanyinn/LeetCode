@@ -1,1 +1,1 @@
-​
+1. dp technique. First keep track of the product of the number and the frequency as an array. Store as an array up to the max number + 1 in the list (as last number might not get picked). Going from low to high, dp keeps track of best sum so far up to this number, where at each step either pick the number (`dp[i-2] + freq[i]`), or not (`dp[i-1]`).
