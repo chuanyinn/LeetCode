@@ -10,8 +10,8 @@ class Solution:
             current_sum += num
             remainder = current_sum % k
             
-            if remainder < 0:
-                remainder += k
+            # if remainder < 0:
+            #     remainder += k
             
             if remainder in mod_count:
                 result += mod_count[remainder]
