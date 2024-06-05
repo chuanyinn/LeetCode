@@ -15,7 +15,4 @@ class Solution:
                          max(int(nums2[i] >= nums2[i-1]) * dp2[i-1], 0)) + 1
             res = max(res, max(dp1[i], dp2[i]))
         
-        print(dp1)
-        print(dp2)
-            
         return res
