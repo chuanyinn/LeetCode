@@ -21,7 +21,6 @@ class Solution:
                         grid[r][c] = GUARDED
                     r += dr
                     c += dc
-        print(grid)
         
         unguarded_count = 0
         for row in range(m):
