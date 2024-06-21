@@ -11,4 +11,5 @@ class Solution:
         
         return res.values()
         
-        
+        # approach 1: use sorted string as the key, but due to sorting this is slow
+        # O(N * K * logK)
