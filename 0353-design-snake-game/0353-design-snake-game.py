@@ -12,8 +12,6 @@ class SnakeGame:
         self.dirs = {'U': (-1, 0), 'D': (1, 0), 'L': (0, -1), 'R': (0, 1)}
 
     def move(self, direction: str) -> int:
-        print(self.snake)
-        print(self.snake_set)
         r, c = self.snake[0]
         dr, dc = self.dirs[direction]
         nr, nc = r + dr, c + dc
@@ -26,20 +24,17 @@ class SnakeGame:
         if (nr, nc) in self.snake_set and (nr, nc) != self.snake[-1]:
             return -1
         
-
-        
         # eat
         if self.food_index < len(self.food) and (nr, nc) == tuple(self.food[self.food_index]):
-            print('here')
             self.score += 1
             self.food_index += 1
         else:
             tail = self.snake.pop()
-            print(tail)
             self.snake_set.remove(tail)
             
         self.snake.insert(0, (nr, nc))
         self.snake_set.add((nr, nc))
+        
         return self.score
 
 # Your SnakeGame object will be instantiated and called as such:
