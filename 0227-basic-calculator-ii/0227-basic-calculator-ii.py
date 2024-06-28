@@ -28,7 +28,7 @@ class Solution:
                 apply_operation(operation, current_number)
                 current_number = 0
                 operation = char
-
+        print(stack)
         # Sum up all values in the stack
         return sum(stack)
         
