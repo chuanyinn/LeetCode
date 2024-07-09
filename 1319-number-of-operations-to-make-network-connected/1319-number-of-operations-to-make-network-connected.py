@@ -17,8 +17,9 @@ class Solution:
                 else:
                     parent[root2] = root1
                     rank[root1] += 1
-            if len(connections) < n - 1:
-                return -1
+                    
+        if len(connections) < n - 1:
+            return -1
         
         parent = list(range(n))
         rank = [1] * n
